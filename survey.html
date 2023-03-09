@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title> Survey &dash; Jaime Marsh </title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/process_form.js"></script>
+    <div class="headerimg"></div>
+</head>
+
+<body>
+    <article>
+        <header class="headingText">Are you a Werewolf?</header>
+        <form action="process.php" method="post" name="htmlForm">
+            <fieldset>
+                <!--Personal Info Survey -->
+                <legend>Personal Survey Info</legend>
+                <label for="first_name">First Name:</label>
+                <div>
+                    <div>
+                        <input type="text" class="personalSurvey" name="first_name" id="first_name" value=""
+                            placeholder="Ex. Jaime" />
+                    </div>
+                    <div>
+                        <p id="firstDisplay"></p>
+                        <img id="goldstar1" src="img/goldstar.png" width="20px" alt="goldstar">
+                    </div>
+                </div>
+
+                <label for="last_name">Last Name:</label>
+                <div>
+                    <div>
+                        <input type="text" class="personalSurvey" name="last_name" id="last_name" value=""
+                            placeholder="Ex. Marsh" />
+                    </div>
+                    <div>
+                        <p id="lastDisplay"></p>
+                        <img id="goldstar2" src="img/goldstar.png" width="20px" alt="goldstar">
+                    </div>
+                </div>
+
+                <label for="phone_number">Phone Number:</label>
+                <div>
+                    <div>
+                        <input type="text" class="personalSurvey" name="phoneNumebr" id="phone_number" value=""
+                            placeholder="XXX XXX-XXXX" />
+                    </div>
+                    <div>
+                        <p id="phoneDisplay"></p>
+                        <img id="goldstar3" src="img/goldstar.png" width="20px" alt="goldstar">
+                    </div>
+                </div>
+
+                <label for="email">Email:</label>
+                <div>
+                    <div>
+                        <input type="text" class="personalSurvey" name="email" id="email" value=""
+                            placeholder=".com or .edu" />
+                    </div>
+                    <div>
+                        <p id="emailDisplay"></p>
+                        <img id="goldstar4" src="img/goldstar.png" width="20px" alt="goldstar">
+                    </div>
+                </div>
+
+                <label for="website">Website:</label>
+                <div>
+                    <div>
+                        <input type="text" class="personalSurvey" name="website" id="website" value=""
+                            placeholder="https://" />
+                    </div>
+                    <div>
+                        <p id="websiteDisplay"></p>
+                        <img id="goldstar5" src="img/goldstar.png" width="20px" alt="goldstar">
+                    </div>
+                </div>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your Favorite Holiday?</legend>
+                <input type="radio" id="werewolf1" name="surveyRadio" value="werewolf" class="radio">
+                <label for="werewolf1" class="radioClass">Halloween</label><br>
+
+                <input type="radio" id="notaWerewolf1" name="surveyRadio" value="notaWerewolf" class="radio">
+                <label for="notaWerewolf1" class="radioClass">Christmas</label><br>
+
+                <input type="radio" id="unknown1" name="surveyRadio" value="unknown" class="radio">
+                <label for="unknown1" class="radioClass">Thanksgiving</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Are any of your clothes unexplainably torn?</legend>
+                <input type="radio" id="werewolf2" name="surveyRadio2" value="werewolf" class="radio">
+                <label for="werewolf2" class="radioClass">Yes</label><br>
+
+                <input type="radio" id="notaWerewolf2" name="surveyRadio2" value="notaWerewolf" class="radio">
+                <label for="notaWerewolf2" class="radioClass">No</label><br>
+
+                <input type="radio" id="unknown2" name="surveyRadio2" value="unknown" class="radio">
+                <label for="unknown2" class="radioClass">No but I've noticed weird things...</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Do you like the show Supernatural?</legend>
+                <input type="radio" id="werewolf3" name="surveyRadio3" value="werewolf" class="radio">
+                <label for="werewolf3" class="radioClass">Yes of course!</label><br>
+
+                <input type="radio" id="notaWerewolf3" name="surveyRadio3" value="notaWerewolf" class="radio">
+                <label for="notaWerewolf3" class="radioClass">No</label><br>
+
+                <input type="radio" id="unknown3" name="surveyRadio3" value="unknown" class="radio">
+                <label for="unknown3" class="radioClass">It seems relatable</label>
+                <br>
+            </fieldset>
+
+            <div class="submit">
+                <input type="submit" id="submit" name="submit" value="Submit" />
+            </div>
+        </form>
+        <!-- Side navigation -->
+        <div class="sidebar">
+            <a href="#">More Quizzes:</a>
+            <a href="#">Are you a cat?</a>
+            <a href="#">What Type of Disney Adult Are You?</a>
+            <a href="#">What are you Doing with you Life?</a>
+            <a href="#">What Candle Scent Are You?</a>
+        </div>
+
+        <div>
+            <div id="createBadge"></div>
+        </div>
+    </article>
+
+    <div>
+        <footer>
+            <br>
+            <p>Created for DIG 3716c by Jaime Marsh</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
